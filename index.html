@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podex Academia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>PODEX<span>FIT</span></h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#planos">Planos</a>
+            <a href="#treinos">Treinos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div>
+            <h2>TRANSFORME SEU CORPO</h2>
+            <p>Treine forte. Supere seus limites. Seja sua melhor versão.</p>
+
+            <button onclick="mostrarMensagem()">
+                Começe sua jornada
+            </button>
+        </div>
+    </section>
+
+    <section id="planos">
+        <h2>Planos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Plano Mensal</h3>
+                <p class="preco">R$ 99,90</p>
+                <p>Acesso à academia</p>
+                <p>Musculação</p>
+                <button onclick="assinar('Mensal')">Assinar</button>
+            </div>
+
+            <div class="card destaque">
+                <h3>Plano Trimestral</h3>
+                <p class="preco">R$ 249,90</p>
+                <p>Acesso ilimitado</p>
+                <p>Musculação + Cardio</p>
+                <button onclick="assinar('Trimestral')">Assinar</button>
+            </div>
+
+            <div class="card">
+                <h3>Plano Anual</h3>
+                <p class="preco">R$ 799,90</p>
+                <p>Acesso ilimitado</p>
+                <p>Acompanhamento</p>
+                <button onclick="assinar('Anual')">Assinar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="treinos">
+        <h2>Escolha seu treino</h2>
+
+        <select id="treino">
+            <option value="">Selecione</option>
+            <option value="Peito">Peito</option>
+            <option value="Costas">Costas</option>
+            <option value="Pernas">Pernas</option>
+            <option value="Braços">Braços</option>
+            <option value="Ombros">Ombros</option>
+        </select>
+
+        <button onclick="verTreino()">Ver treino</button>
+
+        <div id="resultado"></div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em contato</h2>
+
+        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="email" id="email" placeholder="Seu e-mail">
+
+        <button onclick="enviarFormulario()">
+            Enviar
+        </button>
+
+        <p id="mensagem"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 PodexFit Academia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

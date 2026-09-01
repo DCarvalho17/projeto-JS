@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #0b0b0b;
+}
+
+header h1 {
+    color: white;
+}
+
+header span {
+    color: red;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.8)
+    ),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48")
+    center/cover;
+}
+
+.hero h2 {
+    font-size: 50px;
+    max-width: 600px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 10px;
+}
+
+.preco {
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+.destaque {
+    border: 2px solid red;
+}
+
+select,
+input {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#resultado {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 25px;
+}
